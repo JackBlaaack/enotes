@@ -1,0 +1,26 @@
+{
+  "name": "enotes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "npx playwright test",
+    "ui-mode": "npx playwright test --ui",
+    "report-html-open": "npx playwright show-report",
+    "report-create": "allure generate allure-results -o allure-report --clean",
+    "report-open": "npm run report-create && allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.10.1",
+    "allure-playwright": "^3.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "lodash": "^4.17.21"
+  }
+}
